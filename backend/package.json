@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "jest",  
+    "test": "jest",
     "start": "nodemon -L"
   },
   "jest": {
