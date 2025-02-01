@@ -3,7 +3,8 @@ const jwt = require('jsonwebtoken');
 
 // Middleware para verificar el token
 const verifyToken = (req, res, next) => {
-    const token = req.headers['authorization']?.split(' ')[1];
+    const token = req.headers.authorization?.split(" ")[1];
+
     if (!token) {
         return res.status(401).json({ message: 'No autorizado, token requerido' });
     }
